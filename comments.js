@@ -1,4 +1,4 @@
-// create webserver for comment service
+// create webserver
 // 1. create web server
 // 2. create database connection
 // 3. create table
