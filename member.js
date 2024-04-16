@@ -1,13 +1,12 @@
 function skillsMemeber() {
-    var member = {
-        name: 'John Doe',
-        age: 30,
-        skills: ['HTML', 'CSS', 'JS'],
-        details: function () {
-            this.skills.forEach(function (skill) {
-                console.log(`${this.name} knows ${skill}`);
-            });
+    return {
+        restrict: 'E',
+        templateUrl: 'app/components/member/member.html',
+        controller: 'SkillsMemberController',
+        controllerAs: 'vm',
+        bindToController: true,
+        scope: {
+            member: 'm'
         }
-    };
-    member.details();
+    }
 }
